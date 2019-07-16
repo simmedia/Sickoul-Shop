@@ -1,0 +1,23 @@
+{
+  "name": "sickoul-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simmedia/Sickoul-Shop.git"
+  },
+  "author": "Stefan Simic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simmedia/Sickoul-Shop/issues"
+  },
+  "homepage": "https://github.com/simmedia/Sickoul-Shop#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "app": "^0.1.0"
+  }
+}
