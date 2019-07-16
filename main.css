@@ -113,6 +113,7 @@ body {
   grid-row-gap: 2rem;
 }
 .img-container {
+  height: 250px;
   position: relative;
   overflow: hidden;
 }

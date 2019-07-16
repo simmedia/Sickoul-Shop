@@ -30,7 +30,6 @@ class Products {
       let contentful = await client.getEntries({
         content_type: "products"
       });
-    //   console.log(contentful.items);
 
       let result = await fetch("products.json");
       let data = await result.json();
