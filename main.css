@@ -14,6 +14,7 @@
   box-sizing: border-box;
 }
 body {
+  /* padding: 50px; */
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: "Lato", sans-serif;
@@ -58,7 +59,7 @@ body {
 /* --------------- Hero ---------------- */
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+  background: url("./images/greg.jpg") right/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +72,7 @@ body {
   overflow: hidden;
 }
 .banner-title {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
@@ -202,7 +203,7 @@ body {
 }
 @media screen and (min-width: 668px) {
   .hero .banner {
-    width: 60% !important;
+    width: 100% !important;
   }
   .cart {
     width: 30vw;
@@ -289,3 +290,7 @@ body {
 
 /* --------------- End of Cart ---------------- */
 
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
