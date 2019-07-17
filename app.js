@@ -16,6 +16,7 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
+const infoMessage = document.querySelector(".info-message");
 
 //  Cart
 let cart = [];
@@ -99,7 +100,7 @@ class UI {
         this.addCartItem(cartItem);
 
         // show the cart
-        this.showCart();
+        this.showInfo("Item added successfully!");
       });
     });
   }
@@ -138,6 +139,20 @@ class UI {
     cartOverlay.classList.add("transparentBcg");
     cartDOM.classList.add("showCart");
   }
+
+  showInfo(info) {
+    
+    infoMessage.classList.add("info-message-active");
+    infoMessage.innerHTML = info;
+    // cartDOM.classList.add("showCart");
+    setTimeout(this.hideInfo, 1000)
+  }
+
+  hideInfo() {
+    infoMessage.classList.remove("info-message-active");
+    infoMessage.innerHTML = "";
+  }
+
   setupAPP() {
     cart = Storage.getCart();
     this.setCartValues(cart);

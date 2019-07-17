@@ -4,72 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <script src="https://kit.fontawesome.com/017b905b93.js"></script>
     <link rel="stylesheet" href="main.css" />
     <title>Sickoul</title>
   </head>
   <body>
     <!-- Navbar -->
-    <div class="wrapper">
-    <nav class="navbar">
-      <div class="navbar-center">
-        <span class="nav-icon">
-          <i class="fas fa-bars"> </i>
-        </span>
-        <h3>SICKOUL<span>SHOP</span></h3>
-        <div class="cart-btn">
+    <div class="wrapper animated fadeIn">
+      <nav class="navbar">
+        <div class="side-nav"></div>
+        <div class="navbar-center">
           <span class="nav-icon">
-            <i class="fas fa-cart-plus"></i>
+            <!-- <i class="fas fa-bars"> </i> -->
+            <div class="nav-icon-line burgerLine1"></div>
+            <div class="nav-icon-line burgerLine2"></div>
           </span>
-          <div class="cart-items">0</div>
+          <h3 class="nav-logo">SICKOUL</h3>
+          <div class="cart-btn">
+            <span class="nav-icon">
+              <img src="./images/bag-icon.png" alt="" />
+              <!-- <i class="fas fa-cart-plus"></i> -->
+            </span>
+            <div class="cart-items">0</div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- End of Navbar -->
-    <!-- Hero -->
-    <header class="hero">
-      <div class="banner">
-        <h1 class="banner-title">Sickoul Accessories</h1>
-        <button class="banner-btn">Shop now</button>
-      </div>
-    </header>
-    <!-- End of Hero -->
-
-    <!-- Products -->
-    <section class="products">
-      <div class="section-title">
-        <h2>Our products</h2>
-      </div>
-      <div class="products-center">
-        <!-- Single product -->
-
-        <!--  -->
-      </div>
-    </section>
-    <!-- End of Products -->
-    <!-- Cart -->
-    <div class="cart-overlay">
-      <div class="cart">
-        <div class="close-cart">
-          <span>+</span>
+      </nav>
+      <!-- End of Navbar -->
+      <!-- INFO MESSAGE -->
+      <div class="info-message"></div>
+      <!--  -->
+      <!-- Hero -->
+      <header class="hero">
+        <div class="banner-left">
+          <img src="./images/cory.jpg" alt="">
         </div>
-        <h2>your cart</h2>
-        <div class="cart-content">
-          <!-- Cart item -->
+        <div class="banner-right animated fadeInRight">
+          <h1 class="banner-title">
+            Years of experience in the production of scarves and shawls and
+            other accessories
+          </h1>
+          <button class="banner-btn">Slide in</button>
+        </div>
+      </header>
+      <!-- End of Hero -->
+
+      <!-- Products -->
+      <section class="products">
+        <div class="section-title">
+          <h2>Our products</h2>
+        </div>
+        <div class="products-center">
+          <!-- Single product -->
 
           <!--  -->
         </div>
-        <div class="cart-footer">
-          <h3>your total : $<span class="cart-total">0</span></h3>
-          <button class="clear-cart banner-btn">clear cart</button>
+      </section>
+      <!-- End of Products -->
+      <!-- Cart -->
+      <div class="cart-overlay">
+        <div class="cart">
+          <div class="close-cart">
+            <span>+</span>
+          </div>
+          <h2>your cart</h2>
+          <div class="cart-content">
+            <!-- Cart item -->
+
+            <!--  -->
+          </div>
+          <div class="cart-footer">
+            <h3>your total : $<span class="cart-total">0</span></h3>
+            <button class="clear-cart banner-btn">clear cart</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <!-- End of Cart -->
     <!-- contentful -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <!-- app js -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./animations.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
