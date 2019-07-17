@@ -168,6 +168,7 @@ class UI {
   hideCart() {
     cartOverlay.classList.remove("transparentBcg");
     cartDOM.classList.remove("showCart");
+    this.showInfo('Cart is empty')
   }
   cartLogic() {
     //   clear cart button
