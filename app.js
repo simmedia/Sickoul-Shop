@@ -1,7 +1,5 @@
 const client = contentful.createClient({
-  // This is the space ID. A space is like a project folder in Contentful terms
   space: "rphzw7qab1z3",
-  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
   accessToken: "bKc3w5qN6fappFa-Xp0CBzMMVMemvh7u0wCaDWAlN0Y"
 });
 
@@ -17,6 +15,7 @@ const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
 const infoMessage = document.querySelector(".info-message");
+const cartInfo = document.querySelector(".cartInfo");
 
 //  Cart
 let cart = [];
@@ -175,6 +174,7 @@ class UI {
     clearCartBtn.addEventListener("click", () => {
       this.clearCart();
     });
+
     // cart functionality
     cartContent.addEventListener("click", event => {
       if (event.target.classList.contains("remove-item")) {

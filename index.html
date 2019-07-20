@@ -14,9 +14,20 @@
   </head>
   <body>
     <!-- Navbar -->
+    <!-- Side nav -->
+    <div class="side-nav-overlay">
+      <div class="side-nav">
+        <ul class="side-nav-list">
+          <li class="side-nav-item"><a class="side-nav-link" href="#">Home</a></li>
+          <li class="side-nav-item"><a class="side-nav-link" href="#">About</a></li>
+          <li class="side-nav-item"><a class="side-nav-link" href="#">Products</a></li>
+          <li class="side-nav-item"><a class="side-nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of side nav -->
     <div class="wrapper animated fadeIn">
       <nav class="navbar">
-        <div class="side-nav"></div>
         <div class="navbar-center">
           <span class="nav-icon">
             <!-- <i class="fas fa-bars"> </i> -->
@@ -40,7 +51,7 @@
       <!-- Hero -->
       <header class="hero">
         <div class="banner-left">
-          <img src="./images/cory.jpg" alt="">
+          <img src="./images/cory.jpg" alt="" />
         </div>
         <div class="banner-right animated fadeInRight">
           <h1 class="banner-title">
@@ -71,6 +82,7 @@
             <span>+</span>
           </div>
           <h2>your cart</h2>
+          <div class="cartInfo"></div>
           <div class="cart-content">
             <!-- Cart item -->
 
@@ -88,10 +100,10 @@
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <!-- app js -->
     <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./animations.js"></script>
     <script src="app.js"></script>
   </body>
